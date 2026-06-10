@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go-Kart Design & Optimization | Sharath Chandra Pabba Portfolio</title>
+  <meta name="description" content="Go-kart structural chassis optimization and FEA analysis developed by Sharath Chandra Pabba.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet (Relative path to styles.css in parent) -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="page-loading" style="background-color: var(--color-bg-work);">
+
+  <!-- Glowing Liquid Blur Backdrop -->
+  <div class="liquid-blur-container">
+    <div class="liquid-blob blob-1"></div>
+    <div class="liquid-blob blob-2"></div>
+    <div class="liquid-blob blob-3"></div>
+  </div>
+
+  <!-- Back Navigation Link -->
+  <a href="../index.html" class="back-nav" id="back-home-btn">
+    <i class="fa-solid fa-arrow-left"></i> BACK TO HOME
+  </a>
+
+  <!-- Project Detail Section -->
+  <main class="detail-section">
+    <div class="detail-container">
+      
+      <!-- Header -->
+      <header class="detail-header">
+        <span class="detail-num">02</span>
+        <h1 class="detail-title">Go-Kart Design</h1>
+        
+        <!-- Meta Details Grid -->
+        <div class="detail-meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">Role</span>
+            <span class="meta-val">Chassis Designer & FEA Analyst</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Timeline</span>
+            <span class="meta-val">February 2026</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Core Stack</span>
+            <span class="meta-val">SolidWorks / ANSYS / Drivetrain Tuning</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Category</span>
+            <span class="meta-val">Vehicle Dynamics</span>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Body Grid -->
+      <div class="detail-body-grid">
+        
+        <!-- Left Text Column -->
+        <div class="detail-text-col">
+          <h3 class="detail-h3"><i class="fa-solid fa-circle-info"></i> Project Overview</h3>
+          <p class="detail-p">
+            I designed and structurally optimized a high-performance electric Go-Kart chassis. My primary focus was on driver safety, mass minimization, and cornering performance. Through structural optimization and drivetrain calibration, I aimed to maximize acceleration while ensuring high torsional rigidity to withstand heavy cornering loads.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-gears"></i> Chassis Engineering & FEA Validation</h3>
+          <p class="detail-p">
+            I drafted the spaceframe chassis in SolidWorks, selecting high-strength AISI 4130 chromoly steel tubing for its optimal strength-to-weight ratio. To validate safety and verify structural compliance, I imported the CAD frame into ANSYS and conducted rigorous Finite Element Analysis (FEA) simulating frontal impact, rear collision, side impact, and torsional warp.
+          </p>
+          <p class="detail-p">
+            By analyzing stress distribution, I identified areas with high concentration (shear points at gussets and motor mounts). I then selectively altered tube diameters and Wall-thickness, and introduced triangular support links. This iterative process allowed me to shave off 9 kg from the chassis (a 40% weight reduction) while preserving structural integrity and keeping the factor of safety above 2.0.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-bolt"></i> Drivetrain Tuning & Performance</h3>
+          <p class="detail-p">
+            On the drivetrain side, I calibrated the sprocket and gear ratios to match the torque characteristics of our 48V brushless DC motor. I performed motor sizing and weight-distribution calculations to optimize the traction limit of the tires.
+          </p>
+          <p class="detail-p">
+            Through gear-ratio modifications, I tuned the drivetrain to achieve rapid acceleration, launching the kart from 0 to 100 meters in just 5.4 seconds during validation runs, balancing peak speed against acceleration punch.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-circle-check"></i> Key Deliverables & Achievements</h3>
+          <ul class="detail-list">
+            <li>Designed and modeled a complete Go-Kart chassis spaceframe in SolidWorks, achieving an optimized weight savings of 9 kg.</li>
+            <li>Conducted full-vehicle FEA tests (ANSYS) for frontal impact, rear crash, and torsional load cases.</li>
+            <li>Calibrated motor-gear ratios to achieve a tested 0-100m acceleration sprint of 5.4 seconds.</li>
+          </ul>
+        </div>
+        
+        <!-- Right Media Column -->
+        <div class="detail-media-col">
+          <div class="media-card" id="media-gokart-1">
+            <img src="../assets/gokart_team.jpg" alt="Team Garuda Go-Kart on track">
+            <div class="media-cap">Team Garuda with our custom electric Go-Kart on the GKDC racing track.</div>
+          </div>
+
+          <div class="media-card" id="media-gokart-2">
+            <img src="../assets/gokart_trophy.jpg" alt="GKDC Motorsports Trophy Presentation">
+            <div class="media-cap">Trophy presentation celebrating our podium finish and vehicle dynamics awards.</div>
+          </div>
+
+          <div class="media-card" id="media-gokart-3">
+            <img src="../assets/cswa_certificate.jpg" alt="CSWA Certified SolidWorks Associate">
+            <div class="media-cap">Certified SolidWorks Associate (CSWA) credential backing my engineering design work.</div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- Custom Scripts (Dynamic blur effects) -->
+  <script src="../app.js"></script>
+</body>
+</html>

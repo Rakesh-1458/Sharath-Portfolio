@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autonomous Rover | Sharath Chandra Pabba Portfolio</title>
+  <meta name="description" content="Pixhawk-based autonomous ground rover with sensor fusion and obstacle avoidance developed by Sharath Chandra Pabba.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet (Relative path to styles.css in parent) -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="page-loading" style="background-color: var(--color-bg-work);">
+
+  <!-- Glowing Liquid Blur Backdrop -->
+  <div class="liquid-blur-container">
+    <div class="liquid-blob blob-1"></div>
+    <div class="liquid-blob blob-2"></div>
+    <div class="liquid-blob blob-3"></div>
+  </div>
+
+  <!-- Back Navigation Link -->
+  <a href="../index.html" class="back-nav" id="back-home-btn">
+    <i class="fa-solid fa-arrow-left"></i> BACK TO HOME
+  </a>
+
+  <!-- Project Detail Section -->
+  <main class="detail-section">
+    <div class="detail-container">
+      
+      <!-- Header -->
+      <header class="detail-header">
+        <span class="detail-num">01</span>
+        <h1 class="detail-title">Autonomous Rover</h1>
+        
+        <!-- Meta Details Grid -->
+        <div class="detail-meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">Role</span>
+            <span class="meta-val">Lead Systems Engineer</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Timeline</span>
+            <span class="meta-val">March 2026</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Core Stack</span>
+            <span class="meta-val">Pixhawk / Arduino / Sensor Fusion</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Category</span>
+            <span class="meta-val">Autonomous Robotics</span>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Body Grid -->
+      <div class="detail-body-grid">
+        
+        <!-- Left Text Column -->
+        <div class="detail-text-col">
+          <h3 class="detail-h3"><i class="fa-solid fa-circle-info"></i> Project Overview</h3>
+          <p class="detail-p">
+            My primary objective in this project was to design and build a Pixhawk-based autonomous ground rover capable of high-precision waypoint navigation and real-time obstacle avoidance. I wanted to address the challenges of localized navigation errors on rugged terrain, creating a robust, self-correcting mechanical platform suitable for surveying, mapping, and automated land logistics.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-gears"></i> Mechanical & Firmware Integration</h3>
+          <p class="detail-p">
+            I built the rover on a high-clearance 4-wheel drive chassis to ensure traction and stability across uneven ground. At the heart of the system is a Pixhawk 2.4.8 autopilot running custom-configured ArduRover stack, coupled with an Arduino microcontroller handling the low-level ultrasonic array polling and peripheral control.
+          </p>
+          <p class="detail-p">
+            To achieve accurate navigation, I implemented sensor fusion between GPS, a digital compass, and wheel encoders. The biggest challenge was countering compass distortion caused by the drive motors. I resolved this by scripting customized calibration filters and offset matrices, enabling the rover to correct its heading within 1 to 2 seconds of startup.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-code-branch"></i> Obstacle Avoidance & Path Correction</h3>
+          <p class="detail-p">
+            I designed a multi-sensor collision avoidance algorithm that runs dynamically in parallel with standard GPS mission waypoints. Using a front-facing ultrasonic array and lidar sensors, the system performs continuous environmental sweeps.
+          </p>
+          <p class="detail-p">
+            When an obstacle is detected within a 2-meter threshold, my code triggers an override event. The rover calculates a local vector bypass, navigates safely around the object, and then re-establishes lock with the original GPS course coordinates once the obstacle clears.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-circle-check"></i> Key Deliverables & Achievements</h3>
+          <ul class="detail-list">
+            <li>Successfully engineered a self-guided ground rover achieving 2-5m GPS waypoint accuracy on varying outdoor terrains.</li>
+            <li>Developed sensor-fusion logic combining GPS, ultrasonic rangefinders, and telemetry to handle active obstacle mapping.</li>
+            <li>Designed and fabricated custom structural mounting brackets using 3D printing to protect fragile flight controller pins from vibrations.</li>
+          </ul>
+        </div>
+        
+        <!-- Right Media Column -->
+        <div class="detail-media-col">
+          <div class="media-card" id="media-rover-1">
+            <img src="../assets/mission_flowchart.png" alt="Decision Logic Flowchart">
+            <div class="media-cap">Algorithmic decision logic and navigation loop flowchart.</div>
+          </div>
+          
+          <div class="media-card" id="media-rover-2">
+            <img src="../assets/vision_detection.png" alt="Obstacle Vision Detection">
+            <div class="media-cap">Real-time computer vision detection stream tested for high-level object tagging.</div>
+          </div>
+
+          <div class="media-card" id="media-rover-3">
+            <img src="../assets/image_986eb7f3.png" alt="Active shape scanning calibration">
+            <div class="media-cap">Object scanning calibration test set showing active boundary detection.</div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- Custom Scripts (Dynamic blur effects) -->
+  <script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIDAR Scout & Cargo UAV | Sharath Chandra Pabba Portfolio</title>
+  <meta name="description" content="High-endurance scout and cargo delivery drones developed by Sharath Chandra Pabba under DFI & SAEINDIA Aerothon.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet (Relative path to styles.css in parent) -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="page-loading" style="background-color: var(--color-bg-work);">
+
+  <!-- Glowing Liquid Blur Backdrop -->
+  <div class="liquid-blur-container">
+    <div class="liquid-blob blob-1"></div>
+    <div class="liquid-blob blob-2"></div>
+    <div class="liquid-blob blob-3"></div>
+  </div>
+
+  <!-- Back Navigation Link -->
+  <a href="../index.html" class="back-nav" id="back-home-btn">
+    <i class="fa-solid fa-arrow-left"></i> BACK TO HOME
+  </a>
+
+  <!-- Project Detail Section -->
+  <main class="detail-section">
+    <div class="detail-container">
+      
+      <!-- Header -->
+      <header class="detail-header">
+        <span class="detail-num">03</span>
+        <h1 class="detail-title">NIDAR Scout & Cargo</h1>
+        
+        <!-- Meta Details Grid -->
+        <div class="detail-meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">Role</span>
+            <span class="meta-val">Lead UAV Systems Developer</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Timeline</span>
+            <span class="meta-val">December 2025</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Core Stack</span>
+            <span class="meta-val">Composites / Pixhawk / companion PC / Telemetry</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Category</span>
+            <span class="meta-val">UAV Systems & Aviation</span>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Body Grid -->
+      <div class="detail-body-grid">
+        
+        <!-- Left Text Column -->
+        <div class="detail-text-col">
+          <h3 class="detail-h3"><i class="fa-solid fa-circle-info"></i> Project Overview</h3>
+          <p class="detail-p">
+            Under the Drone Federation of India (DFI) and targeting the SAEINDIA Aerothon rotorcraft design competition, I engineered and fabricated two distinct UAV platforms: a long-endurance Scout Drone optimized for tactical surveillance, and a high-payload Cargo Drone designed to transport a 2 kg utility payload. My primary challenge was minimizing structural weight while maintaining structural integrity to maximize aerodynamic efficiency and battery range.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-gears"></i> Airframe Design & Composite Sizing</h3>
+          <p class="detail-p">
+            I designed the multirotor structures in SolidWorks, utilizing custom-machined 1.5mm carbon fiber composite plates for the main core plate and structural arm brackets. I selected carbon fiber sandwich panels to achieve high torsional rigidity and vibration damping.
+          </p>
+          <p class="detail-p">
+            To determine the motor-propeller configuration, I performed systematic flight physics calculations. I plotted and analyzed three crucial performance curves: Weight vs. Flight Time, Weight vs. Thrust, and Motor Current vs. Thrust. This calibration allowed me to match motor torque characteristics to lightweight carbon fiber propellers, guaranteeing a robust 2:1 thrust-to-weight safety margin for the Cargo drone under full load.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-route"></i> Avionics & Autonomous Navigation</h3>
+          <p class="detail-p">
+            For flight control, I integrated a Pixhawk autopilot running custom ArduCopter firmware, coupled with a Raspberry Pi companion computer for higher-level onboard script processing. I configured wireless telemetry and high-frequency FPV video links to provide real-time status and sensor readouts to the ground station.
+          </p>
+          <p class="detail-p">
+            I mapped and tested autonomous waypoint missions in ArduPilot Mission Planner, including automated take-off, trajectory following, payload drop activation via servo linkages, and home-return. The Scout Drone achieved a verified flight endurance of 45 minutes through systematic weight optimization.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-circle-check"></i> Key Deliverables & Achievements</h3>
+          <ul class="detail-list">
+            <li>Engineered a Scout Drone (45 min endurance) and a Cargo Drone (2 kg capacity) under DFI.</li>
+            <li>Conducted mathematical propulsion analysis, plotting motor current and thrust characteristics for propeller sizing.</li>
+            <li>Configured telemetry, GPS, and Raspberry Pi companion integration for FPV video streaming and waypoint flight plans.</li>
+          </ul>
+        </div>
+        
+        <!-- Right Media Column -->
+        <div class="detail-media-col">
+          <div class="media-card" id="media-drone-1">
+            <img src="../assets/nidar_drones.jpg" alt="NIDAR multirotor drone platforms">
+            <div class="media-cap">NIDAR multirotor scout and cargo platforms developed for the design competition.</div>
+          </div>
+          
+          <div class="media-card" id="media-drone-2">
+            <img src="../assets/nidar_team.jpg" alt="NIDAR drone engineering team">
+            <div class="media-cap">Team NIDAR representing RGUKT Basar with our fabricated systems.</div>
+          </div>
+
+          <div class="media-card" id="media-drone-3">
+            <img src="../assets/nidar_assembled.jpg" alt="Fully assembled scout drone">
+            <div class="media-cap">Finished UAV system configuration including a RadioMaster transmitter interface.</div>
+          </div>
+
+          <div class="media-card" id="media-drone-4">
+            <img src="../assets/nidar_construction.jpg" alt="Drone composite structural frame assembly">
+            <div class="media-cap">Custom yellow 3D printed canopy integrated onto the carbon-fiber frame.</div>
+          </div>
+
+          <div class="media-card" id="media-drone-5">
+            <img src="../assets/nidar_esc.jpg" alt="ESC electronic wiring and assembly">
+            <div class="media-cap">Electronic speed controller (ESC) routing and distribution board wiring.</div>
+          </div>
+
+          <div class="media-card" id="media-drone-6">
+            <img src="../assets/composite_fabrication.jpg" alt="Carbon composite wet layup mixing">
+            <div class="media-cap">Preparing and mixing the epoxy resin for the carbon-fiber wet composite layup process.</div>
+          </div>
+
+          <div class="media-card" id="media-drone-7">
+            <img src="../assets/composite_layup.jpg" alt="Carbon-fiber sheet bonding layup">
+            <div class="media-cap">Applying and setting up carbon-fiber laminate sheets on the fabrication bench.</div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- Custom Scripts (Dynamic blur effects) -->
+  <script src="../app.js"></script>
+</body>
+</html>

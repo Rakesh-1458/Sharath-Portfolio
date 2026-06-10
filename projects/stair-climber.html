@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stair Climbing Robot | Sharath Chandra Pabba Portfolio</title>
+  <meta name="description" content="Tracked mobile robot for stair traversal and cargo manipulation developed by Sharath Chandra Pabba.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet (Relative path to styles.css in parent) -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="page-loading" style="background-color: var(--color-bg-work);">
+
+  <!-- Glowing Liquid Blur Backdrop -->
+  <div class="liquid-blur-container">
+    <div class="liquid-blob blob-1"></div>
+    <div class="liquid-blob blob-2"></div>
+    <div class="liquid-blob blob-3"></div>
+  </div>
+
+  <!-- Back Navigation Link -->
+  <a href="../index.html" class="back-nav" id="back-home-btn">
+    <i class="fa-solid fa-arrow-left"></i> BACK TO HOME
+  </a>
+
+  <!-- Project Detail Section -->
+  <main class="detail-section">
+    <div class="detail-container">
+      
+      <!-- Header -->
+      <header class="detail-header">
+        <span class="detail-num">04</span>
+        <h1 class="detail-title">Stair Climbing Robot</h1>
+        
+        <!-- Meta Details Grid -->
+        <div class="detail-meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">Role</span>
+            <span class="meta-val">Lead Robotics Developer</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Timeline</span>
+            <span class="meta-val">March 2025</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Core Stack</span>
+            <span class="meta-val">Arduino / Bluetooth / Mechanism Design / Tracked Belts</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Category</span>
+            <span class="meta-val">Robotics & Kinematics</span>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Body Grid -->
+      <div class="detail-body-grid">
+        
+        <!-- Left Text Column -->
+        <div class="detail-text-col">
+          <h3 class="detail-h3"><i class="fa-solid fa-circle-info"></i> Project Overview</h3>
+          <p class="detail-p">
+            I designed and fabricated a Bluetooth-controlled tracked robot engineered to traverse complex stairs. My main objective was to develop a mechanical platform capable of climbing steps of varying heights while maintaining stable cargo balancing. This mechanism serves as a foundation for search-and-rescue operations or domestic utility robotics.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-gears"></i> Tracked Mechanism & Stability Optimization</h3>
+          <p class="detail-p">
+            I designed the mechanical linkages and high-traction tracked belt drive in SolidWorks. The main challenge was avoiding vehicle tip-over during climbing transitions. I solved this by optimizing the robot's center of mass, shifting the battery pack forward, and designing flexible track suspension links that absorb vertical impacts.
+          </p>
+          <p class="detail-p">
+            To drive the tracks, I used high-torque DC geared motors controlled by an Arduino Uno through dual H-bridge motor drivers. I calibrated the speed ratios to allow the tracks to climb steps smoothly without slipping or stalling.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-robot"></i> Robotic Arm Integration</h3>
+          <p class="detail-p">
+            To expand the robot's functionality, I machined and integrated a lightweight multi-axis robotic arm onto the chassis frame. I configured the arm joints using servo motors controlled via serial commands from the Arduino.
+          </p>
+          <p class="detail-p">
+            I established a Bluetooth telemetry link to a custom Android application. This allowed for real-time remote teleoperation of the robot's movements and joint angles, enabling pick-and-place trials of cargo during stair climbing missions.
+          </p>
+          
+          <h3 class="detail-h3"><i class="fa-solid fa-circle-check"></i> Key Deliverables & Achievements</h3>
+          <ul class="detail-list">
+            <li>Designed a tracked belt drive mechanism enabling efficient stair climbing on standard steps.</li>
+            <li>Optimized chassis geometry and weight distribution to prevent flipping during stair climbing transitions.</li>
+            <li>Machined and integrated a lightweight robotic arm onto the chassis to enable cargo retrieval.</li>
+            <li>Wired control circuits using Arduino, Bluetooth (HC-05), and motor controllers for wireless operations.</li>
+          </ul>
+        </div>
+        
+        <!-- Right Media Column -->
+        <div class="detail-media-col">
+          <div class="media-card" id="media-stair-1">
+            <img src="../assets/stair_climber_demo.jpg" alt="Tracked robot traversing stairs">
+            <div class="media-cap">Physical tracked robot performing dynamic traversal tests on stair steps.</div>
+          </div>
+          
+          <div class="media-card" id="media-stair-2">
+            <img src="../assets/robotic_arm.jpg" alt="Machined Robotic Arm mounting">
+            <div class="media-cap">Machined prototype of the multi-axis robotic arm mounted on the mobile base.</div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- Custom Scripts (Dynamic blur effects) -->
+  <script src="../app.js"></script>
+</body>
+</html>
